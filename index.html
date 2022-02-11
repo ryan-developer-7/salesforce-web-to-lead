@@ -51,9 +51,9 @@
           .then(response => response.json())
           .then(data => {
 
-            let ddlItems = document.getElementById("00N4K000002A1uc"),
+            let ddlItems = document.getElementById("00N4K000002A1uc");
     
-            for (var i = 0; i < data.length; i++) {
+            for (let i = 0; i < data.length; i++) {
                 let opt = data[i];
                 let el = document.createElement("option");
                 el.textContent = opt;
